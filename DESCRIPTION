@@ -1,0 +1,24 @@
+Package: ddModel
+Type: Package
+Title: The Decision Diffusion Model
+Version: 0.2.8.9
+Date: 2025-06-01  
+Authors@R: c(person(given = "Yi-Shin", family = "Lin", role = c("aut", "cre"), email = "yishinlin001@gmail.com"))
+Maintainer: Yi-Shin Lin <yishinlin001@gmail.com>
+Description: 
+    Density, distribution and random generation functions for the the Decision Diffusion model (DDM). Supports model specification, parameter estimation, and likelihood computation.
+License: GPL (>= 2)  
+Imports:
+    ggdmcPrior,
+    ggdmcModel,
+    Rcpp (>= 1.0.7),
+    methods
+Depends: R (>= 3.3.0)
+LinkingTo: 
+    Rcpp (>= 1.0.7),
+    RcppArmadillo (>= 0.10.7.5.0),
+    ggdmcHeaders
+Suggests: testthat
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: yes
