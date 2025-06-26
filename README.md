@@ -52,7 +52,7 @@ dat <- simulate(sub_model, nsim = 256, parameter_vector = p_vector, n_subject = 
 hdat <- simulate(pop_model, nsim = 128, n_subject = 32)
 ```
 
-You couls also use the function in the package separately.
+You could also use the function in the package separately.
 
 ```
 RT <- seq(0.1, 1.2, 0.01)
