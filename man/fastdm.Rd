@@ -23,14 +23,14 @@ rfastdm(
 
 \item{parameters_r}{A numeric vector of model parameters:
 \describe{
-  \item{a}{Boundary separation (threshold)}
+  \item{a}{Boundary separation.}
   \item{z}{Starting point (bias), must lie between 0 and\code{a}.}
   \item{v}{Drift rate.}
   \item{t0}{Non-decision time (must be \eqn{\ge 0}).}
   \item{d}{Difference in motor execution time between boundaries (e.g.,
-           left vs. right response). When \code{d > 0}, responses
-at the upper boundary are delayed by \code{d} seconds. Symmetric execution
-is assumed when \code{d = 0} (Voss and Voss, 2007.)}
+           left vs. right response). When \code{d > 0}, responses at the
+           upper boundary are delayed by \code{d} seconds. Symmetric 
+           execution is assumed when \code{d = 0} (Voss and Voss, 2007.)}
   \item{sz}{Inter-trial variability in starting point (optional)}
   \item{sv}{Inter-trial variability in drift rate (optional)}
   \item{st0}{Inter-trial variability in non-decision time (optional)}

@@ -1,4 +1,4 @@
-# q(save = "no")
+#  q(save = "no")
 cat("\n\n-------------------- Generate model 0 --------------------")
 rm(list = ls())
 pkg <- c("ddModel", "ggdmcPrior", "ggdmcPhi")
@@ -8,7 +8,6 @@ suppressPackageStartupMessages(tmp <- sapply(pkg, require,
 
 cat("\nWorking directory: ", getwd(), "\n")
 wkdir <- "~/Documents/ddModel/tests/testthat/Group1/"
-
 model <- ggdmcModel::BuildModel(
     p_map = list(
         a = "1", v = "1", z = "1", d = "1", sz = "1", sv = "1",

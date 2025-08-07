@@ -29,7 +29,7 @@ and other DDM-relevant parameters.}
      \item{d}{(Optional) Difference in motor execution time between
 boundaries}
      \item{sv}{(Optional) Inter-trial variability in drift rate}
-     \item{st0}(Optional) {Inter-trial variability in non-decision time}
+     \item{st0}{(Optional) Inter-trial variability in non-decision time}
      \item{sz}{(Optional) Inter-trial variability in starting point}
    }}
 
@@ -103,5 +103,5 @@ Ratcliff, R., & McKoon, G. (2008). The diffusion decision model: Theory
 and data for two-choice decision tasks. Neural Computation, 20(4), 873-922.
 }
 \seealso{
-\code{\link{ddm}}, \code{\link{setDDM}}, \code{\link{validate_ddm_parameters}}
+\code{\link{ddm-class}}, \code{\link{setDDM}}, \code{\link{validate_ddm_parameters}}
 }

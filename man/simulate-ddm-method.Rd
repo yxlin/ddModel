@@ -88,7 +88,7 @@ pop_dist <- ggdmcPrior::BuildPrior(
   lower = c(0, 0, 0, -10, 0),
   upper = rep(NA, model@npar),
   dists = rep("tnorm", model@npar),
-  log_p = rep(F, model@npar)
+  log_p = rep(FALSE, model@npar)
 )
 
 # 2. Enter the population distribution to a DDM model
