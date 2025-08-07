@@ -55,6 +55,5 @@ src/*.so
 cleanup
 .clang-format
 .lintr
-.Rbuildignore
 .build.r
 

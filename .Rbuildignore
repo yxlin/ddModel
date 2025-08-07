@@ -1,0 +1,13 @@
+^\.Rproj\.user$
+^\.renv$
+
+^tests$
+^\.vscode$
+
+^.*\.Rproj$
+^LICENSE\.md$
+
+^.clang-format$
+^\.build\.r$
+^\.lintr$
+^\.github$
