@@ -22,6 +22,5 @@ jobs:
       - name: Run R CMD check
         uses: r-lib/actions/check-r-package@v2
         with:
-          args: --as-cran
-          check_args: --no-manual --no-build-vignettes
-          extra_packages: rcmdcheck
+          args: "--as-cran"
+          
