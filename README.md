@@ -16,10 +16,10 @@ This package supports:
   - Constrain by experimental conditions
   - Vary subject-by-subject (hierarchical modelling ready)
 - **Efficient likelihood evaluation**: fully vectorised for large-scale datasets
-- **Seamless integration**: designed to work smoothly with the ggdmc
+- **Seamless integration**: designed to work smoothly with the `ggdmc`
 
 ![Conceptual illustration of the Diffusion Decision Model](man/figures/ddm_avzt0_fixed_vars.svg)
-*Figure: Illustration of the DDM. Evidence accumulates over time with drift rate **v** until it reaches one of the decision boundaries (±**a**). The starting point **z** and non-decision time **t₀** are also shown; variability parameters (sv, sz, st₀) were set to 0.*
+*Figure: Illustration of the DDM. Evidence accumulates over time with drift rate **v** until it reaches one of the decision boundaries (**a** or **0**). The starting point **z** and non-decision time **t₀** are also shown; variability parameters, sv, sz, and st₀ were set to 0.*
 
 
 ## 🧠 Key Features
@@ -29,7 +29,7 @@ This package supports:
   - Subject-level and population-level datasets
   - Model recovery studies & power analysis
 - Likelihood and density functions optimised for speed
-- Ready for hierarchical modelling pipelines (ggdmcModel, ggdmcPrior, ggdmcHeaders)
+- Ready for hierarchical modelling pipelines (`ggdmcModel`, `ggdmcPrior`, `ggdmcHeaders`)
 
 ## 📌 Who Is It For?
 - **Experimental psychologists** modelling two-alternative forced-choice (2AFC) tasks
@@ -132,12 +132,12 @@ result <- pfastdm(RT, params, is_lower = TRUE, debug = TRUE)
 
 
 ## 🔎 How Does `ddModel` Compare to `HDDM` and `fastdm`?
-If you’ve worked with other diffusion model toolkits, you might wonder how ddModel fits in. Here’s a quick comparison:
+If you’ve worked with other diffusion model toolkits, you might wonder how `ddModel` fits in. Here’s a quick comparison:
 
 - Language & Workflow Integration
-  - HDDM: Python-based Bayesian modelling using PyMC; powerful but requires a Python workflow.
-  - `fastdm`-dm: Stand-alone C++ executable; very fast, but limited R integration and less flexible parameter mapping.
-  - `ddModel`: Native R + C++ (via RcppArmadillo), integrates seamlessly with R packages like ggdmc for hierarchical inference and DE-MCMC sampling.
+  - `HDDM`: Python-based Bayesian modelling using PyMC; powerful but requires a Python workflow.
+  - `fastdm`: Stand-alone C++ executable; very fast, but limited R integration and less flexible parameter mapping.
+  - `ddModel`: Native R + C++ (via RcppArmadillo), integrates seamlessly with R packages like `ggdmc` for hierarchical inference and DE-MCMC sampling.
 
 - Flexibility
   - `ddModel` supports global, condition-wise, and subject-wise parameter specifications.
@@ -145,12 +145,12 @@ If you’ve worked with other diffusion model toolkits, you might wonder how ddM
   - Easy simulation pipelines for subject-level or population-level data.
 
 - Speed and Transparency
-  - Written in modern Rcpp/C++; matches fastdm speed but remains fully open and modifiable within R.
+  - Written in modern Rcpp/C++; matches `fastdm` speed but remains fully open and modifiable within R.
   - Direct access to all functions; no need for command-line wrappers or external scripts.
 
 - Educational and Research Use
   - Simple API for teaching and generating synthetic datasets.
-  - Lightweight alternative if you don’t need HDDM’s full Bayesian machinery.
+  - Lightweight alternative if you don’t need `HDDM`’s full Bayesian machinery.
 
 A comparison table at a glance:
 
@@ -160,9 +160,9 @@ A comparison table at a glance:
 | `fastdm`    | C++ binary | High   | No                    | CLI / external program   |
 | **ddModel** | R + C++    | High   | Via `ggdmc` (DE-MCMC) | Native R, modular & open |
 
-> Why choose ddModel?
+> Why choose `ddModel`?
 >
-> If you work primarily in R or use the `ggdmc` ecosystem, ddModel provides fast, flexible, and fully integrated DDM tools out of the box.
+> If you work primarily in R or use the `ggdmc` ecosystem, `ddModel` provides fast, flexible, and fully integrated DDM tools out of the box.
 
 ## 📚 Key References
 - Voss, A., Rothermund, K., & Voss, J. (2004). Interpreting the parameters of the diffusion model: An empirical validation. *Behavior Research Methods, Instruments, & Computers*, 36(3), 347–360. [https://doi.org/10.3758/BF03196893](https://doi.org/10.3758/BF03196893)
